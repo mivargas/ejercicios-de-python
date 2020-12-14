@@ -1,0 +1,21 @@
+pip3 install pyinstaller  ... esto para intallar la libreria que hace el instalador de apps pytho
+
+pyinstaller practicaCalculadora.py ... esto desde la carpeta donde esta guardado el proyecto
+
+NOTA: si no reconoce el comando pyinstaller hacer lo siguiente:
+sudo find / -name pyinstaller    ... esto nos devolvera laruta delpaquete installer ejemp."/home/miguel/.local/bin/pyinstaller"
+
+/home/miguel/.local/bin/pyinstaller practicaCalculadora.py   ...crear ejecutable (con dependencia de archivos y terminal)
+$PATH = $PATH:/xx/xx/xx   ... estgo en casode virtualenv
+
+
+/home/miguel/.local/bin/pyinstaller --windowed practicaCalculadora.py ...crear ejecutable (con dependencia de archivos)
+
+
+/home/miguel/.local/bin/pyinstaller --windowed --onefile practicaCalculadora.py ...crear ejecutable (un solo archivo)
+
+
+archivo con icono:
+se debe tener un archivo .ico en el mismo directorio del archivo a convertir en ejecutable
+
+/home/miguel/.local/bin/pyinstaller --windowed --onefile --icon=./logo.ico practicaCalculadora.py ...crear ejecutable (un solo archivo y con icono)

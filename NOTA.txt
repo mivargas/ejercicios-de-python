@@ -1,0 +1,15 @@
+El archivo setup.py se usa para establecer paquetes en distribucion (es decir se pueden usar desde cualquier directorio, mo si fueran antivos de python, solo se deben instalar. tambien pueden compartirse en liena una vez creado el paquete y compilado)
+
+pra compilar la creacion del paquete se debe hacer por terminal en la raiz del proyecto donde debe estar el setup.py y ejecutar el siguiente comando:
+python3 setup.py sdist
+
+se crearan 2 directorios nuevos, uno con el nombre del paquete y uno llamado dist (en este ultimo habra un archivo .tar.gz). se debe entrar en dist por terminal y ejecutar el comando de instalacion:
+pip3 install paquete-xx.tar.gz
+
+una vez hecho esto se puede usar el paquete desde cualquier parte del sistema operativo (from paquete import la_funcion)
+
+para desinstalar elpaquete solo ejecutas:
+
+pip3 uninstall nombre_paquete (entiendase nombre del paquete por el cual se llamo en el setup.py "name")
+
+

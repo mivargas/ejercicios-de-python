@@ -1,0 +1,5 @@
+Help on function suma in module __main__:
+
+ssuummaa(num1, num2, num3)
+    calcula las sumade 3 elementos
+    pasados por parametro a esa funcion
